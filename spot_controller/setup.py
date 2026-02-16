@@ -1,0 +1,25 @@
+from setuptools import setup
+
+package_name = 'spot_controller'
+
+setup(
+    name=package_name,
+    version='0.0.1',
+    packages=['spot_controller'],  # Changed to match new directory name
+    data_files=[
+        ('share/' + package_name, ['package.xml']),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='your_name',
+    maintainer_email='your_email@example.com',
+    description='Spot robot controller with basic stand/sit functionality',
+    license='Apache License 2.0',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'spot_controller = spot_controller.spot_controller:main',
+            'spot_mpc_controller = spot_controller.spot_mpc_controller:main',
+        ],
+    },
+)

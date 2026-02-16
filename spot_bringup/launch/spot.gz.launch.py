@@ -17,7 +17,7 @@ def generate_launch_description():
     world_file = LaunchConfiguration('world_file', default='simple_tunnel.sdf')
     world_file_arg = DeclareLaunchArgument(
         'world_file',
-        default_value='empty.sdf',
+        default_value='cylinder_world.sdf',
         description='Name of the world file to load'
     )
 
