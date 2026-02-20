@@ -104,6 +104,7 @@ class Controller(Node):
 
         else:
 
+            # Your code here.
             # Write the steps for getting the control inputs from MPC.
             # Hint: You must call the updateStep() method here.
 
@@ -141,6 +142,7 @@ class Controller(Node):
         model_type = 'continuous'
         sys_model = do_mpc.model.Model(model_type)
 
+        # Your code here.
         # Write the code required to create the model for the MPC below this.
 
         return mpc
@@ -150,6 +152,7 @@ class Controller(Node):
         sys.stdout = DummyFile()
         sys.stderr = DummyFile()
 
+        # Your code here.
         # Write the MPC update below this.
 
 
